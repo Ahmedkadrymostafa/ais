@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Squad</title>
+    <link rel="icon" type="image/png" href="../imgs/favicon.png"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+    <!-- start landing page  -->
+  <div class="landing-page" style="background-image: url(../imgs/03.jpg);">
+
+    <!-- header section  -->
+<header>
+   <div class="container">
+       <div class="logo">
+           <img src="../imgs/logo.png" alt="logo">
+       </div>
+       <div class="header-links">
+           <nav class="nav-header">
+               <a href="../index.html" target="_self">Home</a>
+               <a href="./about.html" target="_self">About us</a>
+               <a href="./quotes.html" target="_blank">Quotes</a>
+           </nav>
+           <div class="contact-btn">
+               <a href="../pages/contact.html" target="_blank">Contact Us</a>
+               <a href="../pages/login.html" target="_blank">login</a>
+           </div>
+       </div>
+   </div>
+   <div class="burger-btn">
+       <i class="fa-solid fa-bars-staggered bars" onclick="toggler()"></i>
+   </div>
+</header>
+
+<!-- end header section  -->
+
+</div>
+<!-- end landing page  -->
+
+<!-- start about us section  -->
+<div class="about-us">
+    <div class="container">
+        <div class="info">
+            <h2>
+                what we can do
+            </h2>
+            <p>
+                Creating websites, making mobile phone programs, desktop programs, and creating operating systems.
+            </p>
+        </div>
+        <div class="picture">
+            <img src="../imgs/about4.png" alt="image">
+        </div>
+    </div>
+</div>
+<!-- start services  -->
+<div class="apps">
+    <div class="container">
+        <div class="item">
+            <p><i>UI/UX Designs</i></p>
+        </div>
+        <div class="item">
+            <p><i>Android Apps</i></p>
+        </div>
+        <div class="item">
+            <p><i>IOS Apps</i></p>
+        </div>
+        <div class="item">
+            <p><i>Websites</i></p>
+        </div>
+    </div>
+</div>
+<!-- end services  -->
+<div class="about-us">
+    <div class="container">
+        <div class="info">
+            <h2>
+                future vision
+            </h2>
+            <p>
+                We have goals that we seek to implement in the future, and we strive to keep pace with technological development, build the latest systems and programs, and compete with major international companies.
+            </p>
+        </div>
+        <div class="picture">
+            <img src="../imgs/about3.png" alt="image">
+        </div>
+    </div>
+</div>
+<!-- start our skills  -->
+<div class="our-skills">
+    <div class="main-heading">
+        <p>our powerful</p>
+    </div>
+    <div class="container">
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="98%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="89%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="85%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>Php</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>React</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="78%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end our skills  -->
+<!-- end about us section  -->
+
+<!-- fixed social links  -->
+<nav class="social-links">
+    <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</nav>
+<!-- end fixed social links  -->
+
+<!-- beginning footer  -->
+<footer>
+    <div class="container">
+        <div class="details">
+            <p>&#169 reserved at creative squad</p>
+        </div>
+        <div class="links">
+            <div class="social-logos">
+                <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- ending footer  -->
+
+  <!-- some java script codes  -->
+  <script>
+    // animation skill on scrolling
+        let ourSkills = document.querySelector(".our-skills")
+
+        window.onscroll = function () {
+            let SkillsOffsetTop = ourSkills.offsetTop;
+            let skillsOuterHeight = ourSkills.offsetHeight;
+            let windowHeight = this.innerHeight;
+            let windowScrollTop = this.pageYOffset;
+
+            if (windowScrollTop > (skillsOuterHeight + SkillsOffsetTop - windowHeight)) {
+
+                document.querySelectorAll(".skill .skill-progress span").forEach(span => {
+                    span.style.width = span.dataset.progress;
+                })
+
+            }
+        }
+// end animation 
+  </script>
+  <!-- ending some java script codes  -->
+
+    <script src="../js/all.min.js"></script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
